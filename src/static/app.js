@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!search) return true;
       return (
         name.toLowerCase().includes(search) ||
-        details.description.toLowerCase().includes(search) ||
-        details.schedule.toLowerCase().includes(search)
+        (details.description || "").toLowerCase().includes(search) ||
+        (details.schedule || "").toLowerCase().includes(search)
       );
     });
     filtered.sort((a, b) => {
