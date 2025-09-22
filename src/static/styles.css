@@ -1,3 +1,21 @@
+/* Toolbar for activities filters */
+#activities-toolbar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+#activities-toolbar input[type="text"] {
+  flex: 1 1 200px;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#activities-toolbar select {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 * {
   box-sizing: border-box;
   margin: 0;
